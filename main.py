@@ -56,10 +56,9 @@ def get_min_max_by_time(hour=None, minute=None):
     # return int(time_rate * min_step), int(time_rate * max_step)
     
     # 不需要步数渐进，单次刷满 
-    # min_step = get_int_value_default(config, 'MIN_STEP', 18000)
-    # max_step = get_int_value_default(config, 'MAX_STEP', 25000)
-    min_step = 15000
-    max_step = 15500
+    min_step = get_int_value_default(config, 'MIN_STEP', 15000)
+    max_step = get_int_value_default(config, 'MAX_STEP', 16000)
+
     return min_step, max_step
 
 
